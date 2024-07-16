@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience - Daniil Krizhanovskyi</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <!-- Your existing styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Script for language switching -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-lang="home">Home</a></li>
+        <li><a href="about.html" data-lang="about">About</a></li>
+        <li><a href="projects.html" data-lang="projects">Projects</a></li>
+        <li><a href="education.html" data-lang="education">Education</a></li>
+        <li><a href="experience.html" data-lang="experience">Experience</a></li>
+        <li><a href="contact.html" data-lang="contact">Contact</a></li>
+      </ul>
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+        <div class="dropdown-content">
+          <button onclick="setLanguage('en')">EN</button>
+          <button onclick="setLanguage('de')">DE</button>
+          <button onclick="setLanguage('ua')">UA</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="experience">
+      <h2 data-lang="experience_title">Experience</h2>
+      <div class="job">
+        <h3>Freelance Java Developer</h3>
+        <p><strong>Duration:</strong> January 2019 - Present</p>
+        <p>As a Freelance Java Developer, I have worked on various projects, delivering high-quality backend solutions and gaining hands-on experience in diverse technologies.</p>
+      </div>
+
+      <div class="job">
+        <h3>Billing.media Ukraine</h3>
+        <p><strong>Position:</strong> Java Developer Intern</p>
+        <p><strong>Duration:</strong> January 2019 - June 2019</p>
+        <p>Worked on developing Java-based applications and participated in the full software development lifecycle.</p>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>

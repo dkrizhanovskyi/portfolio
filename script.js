@@ -30,10 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
     initializeTranslations();
 
     // Function to set the language
-    const setLanguage = (lang) => {
+    window.setLanguage = function(lang) { // Make setLanguage globally available
+        if (!translations[lang]) {
+            console.warn(`Language "${lang}" is not available`);
+            return;
+        }
+
         document.querySelectorAll('[data-lang]').forEach(element => {
             const key = element.getAttribute('data-lang');
-            if (translations[lang] && translations[lang][key]) {
+            if (translations[lang][key]) {
                 element.textContent = translations[lang][key];
             } else {
                 console.warn(`Missing translation for "${key}" in "${lang}"`);
@@ -52,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.burger-menu .dropdown-content button').forEach(button => {
         button.addEventListener('click', (event) => {
             const lang = event.target.getAttribute('data-lang');
-            if (lang && translations[lang]) {
+            if (lang) {
                 setLanguage(lang);
                 dropdownContent.classList.remove('show');
             } else {

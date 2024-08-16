@@ -1,57 +1,55 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
     const translations = {
-        en: {},
-        de: {},
-        ua: {}
+      en: {},
+      de: {},
+      ua: {}
     };
-
-    // Function to load translations
-    const loadTranslations = async (lang) => {
-        try {
-            const response = await fetch(`lang/${lang}.json`);
-            if (!response.ok) throw new Error(`Could not load ${lang} translations`);
-            const data = await response.json();
-            translations[lang] = data;
-        } catch (error) {
-            console.error(error);
-        }
-    };
-
-    // Load all translations and set the initial language
-    const initializeTranslations = async () => {
-        await Promise.all([
-            loadTranslations('en'),
-            loadTranslations('de'),
-            loadTranslations('ua')
-        ]);
-        setLanguage('en'); // Set initial language to English
-    };
-
-    initializeTranslations();
-
-    // Function to set the language
-    const setLanguage = (lang) => {
-        document.querySelectorAll('[data-lang]').forEach(element => {
-            const key = element.getAttribute('data-lang');
-            if (translations[lang] && translations[lang][key]) {
-                element.textContent = translations[lang][key];
-            }
+  
+    function loadTranslations(lang) {
+      return fetch(lang/${lang}.json)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(Could not load ${lang} translations);
+          }
+          return response.json();
+        })
+        .then(data => {
+          translations[lang] = data;
         });
+    }
+  
+    Promise.all([
+      loadTranslations('en'),
+      loadTranslations('de'),
+      loadTranslations('ua')
+    ]).then(() => {
+      setLanguage('en'); // Установим начальный язык
+    }).catch(error => {
+      console.error(error);
+    });
+  
+    window.setLanguage = function (lang) {
+      document.querySelectorAll('[data-lang]').forEach(element => {
+        const key = element.getAttribute('data-lang');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
     };
-
+  
     // Burger menu toggle
     const burgerMenu = document.querySelector('.burger-menu .fas');
     const dropdownContent = document.querySelector('.burger-menu .dropdown-content');
     burgerMenu.addEventListener('click', () => {
-        dropdownContent.classList.toggle('show');
+      dropdownContent.classList.toggle('show');
     });
-
+  
     // Event listeners for language buttons
     document.querySelectorAll('.burger-menu .dropdown-content button').forEach(button => {
-        button.addEventListener('click', (event) => {
-            const lang = event.target.dataset.lang;
-            setLanguage(lang);
-            dropdownContent.classList.remove('show');
-        });
+      button.addEventListener('click', (event) => {
+        const lang = event.target.textContent.toLowerCase();
+        setLanguage(lang);
+        dropdownContent.classList.remove('show');
+      });
     });
-});
+  });

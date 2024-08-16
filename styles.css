@@ -1,97 +1,103 @@
-/* General styles */
-body {
-    font-family: 'Roboto', sans-serif;
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to left, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.7)), linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0));
     color: #333;
+    background: linear-gradient(to left, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.7)),
+                linear-gradient(to bottom, rgba(51, 51, 51, 0.7), rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0));
     background-blend-mode: multiply;
-  }
-  
-  header {
+}
+
+/* Header Styles */
+header {
     background: rgba(51, 51, 51, 0.9);
     color: #fff;
     padding: 10px 0;
     text-align: center;
-  }
-  
-  nav ul {
+}
+
+/* Navigation Styles */
+nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     margin: 0 15px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s ease, background 0.3s ease;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: 500;
-  }
-  
-  nav ul li a:hover {
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
     color: #007BFF;
     background: rgba(255, 255, 255, 0.2);
-  }
-  
-  .burger-menu {
+}
+
+/* Burger Menu Styles */
+.burger-menu {
     position: relative;
     display: inline-block;
     margin-left: 20px;
-  }
-  
-  .burger-menu .fas {
+}
+
+.burger-menu .fas {
     font-size: 24px;
     cursor: pointer;
-  }
-  
-  .burger-menu .dropdown-content {
+}
+
+.burger-menu .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #333;
     min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 5px;
-  }
-  
-  .burger-menu .dropdown-content button {
+}
+
+.burger-menu .dropdown-content button {
     color: white;
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;
     border: none;
     background: none;
     cursor: pointer;
-    width: 100%;
     text-align: left;
-  }
-  
-  .burger-menu .dropdown-content button:hover {
+    width: 100%;
+}
+
+.burger-menu .dropdown-content button:hover {
     background-color: #575757;
-  }
-  
-  .burger-menu:hover .dropdown-content {
+}
+
+.burger-menu:hover .dropdown-content {
     display: block;
-  }
-  
-  main {
+}
+
+/* Main Content Styles */
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
-  
-  section {
+}
+
+/* Section Styles */
+section {
     margin-bottom: 40px;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -100,129 +106,128 @@ body {
     width: 80%;
     max-width: 800px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  section:hover {
+}
+
+section:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  h1, h2, h3 {
+}
+
+/* Typography Styles */
+h1, h2, h3 {
     color: #333;
     text-align: center;
-    margin: 0 0 20px;
-  }
-  
-  a {
+    margin-bottom: 20px;
+}
+
+/* Link Styles */
+a {
     color: #007BFF;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: #0056b3;
     text-decoration: underline;
-  }
-  
-  /* Profile Image styles */
-  img {
+}
+
+/* Profile Image Styles */
+img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-radius: 50%;
     width: 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  img:hover {
+}
+
+img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Project styles */
-  .project {
+}
+
+/* Project Styles */
+.project {
     margin-bottom: 20px;
-  }
-  
-  .project h3 {
+}
+
+.project h3 {
     margin-top: 0;
     text-align: center;
-  }
-  
-  /* Education styles */
-  .education {
+}
+
+/* Education Styles */
+.education {
     margin-bottom: 20px;
-  }
-  
-  .education h3 {
+}
+
+.education h3 {
     margin-top: 0;
     text-align: center;
-  }
-  
-  /* Contact section styles */
-  #contact ul {
+}
+
+/* Contact Section Styles */
+#contact ul {
     list-style: none;
     padding: 0;
     text-align: center;
-  }
-  
-  #contact ul li {
+}
+
+#contact ul li {
     margin-bottom: 10px;
-  }
-  
-  #contact ul li a {
+}
+
+#contact ul li a {
     color: #007BFF;
-    text-decoration: none;
-  }
-  
-  #contact ul li a:hover {
+}
+
+#contact ul li a:hover {
     text-decoration: underline;
-  }
-  
-  /* Media Queries */
-  @media (min-width: 768px) {
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
     main {
-      padding: 40px;
+        padding: 40px;
     }
-  
+
     section {
-      width: 70%;
+        width: 70%;
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     section {
-      width: 60%;
+        width: 60%;
     }
-  }
-  
-  /* Mobile Styles */
-  @media (max-width: 767px) {
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
     header {
-      padding: 20px 10px;
+        padding: 20px 10px;
     }
-  
+
     nav ul {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     nav ul li {
-      margin: 10px 0;
+        margin: 10px 0;
     }
-  
+
     .burger-menu {
-      margin-left: 0;
+        margin-left: 0;
     }
-  
+
     section {
-      width: 90%;
-      padding: 15px;
+        width: 90%;
+        padding: 15px;
     }
-  
+
     img {
-      width: 150px;
+        width: 150px;
     }
-  }
-  
+}

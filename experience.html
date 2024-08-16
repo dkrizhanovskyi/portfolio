@@ -1,57 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience - Daniil Krizhanovskyi</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <!-- Your existing styles -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Script for language switching -->
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" data-lang="home">Home</a></li>
-        <li><a href="about.html" data-lang="about">About</a></li>
-        <li><a href="projects.html" data-lang="projects">Projects</a></li>
-        <li><a href="education.html" data-lang="education">Education</a></li>
-        <li><a href="experience.html" data-lang="experience">Experience</a></li>
-        <li><a href="contact.html" data-lang="contact">Contact</a></li>
-      </ul>
-      <div class="burger-menu">
-        <i class="fas fa-bars"></i>
-        <div class="dropdown-content">
-          <button onclick="setLanguage('en')">EN</button>
-          <button onclick="setLanguage('de')">DE</button>
-          <button onclick="setLanguage('ua')">UA</button>
-        </div>
-      </div>
-    </nav>
-  </header>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Experience - Daniil Krizhanovskyi</title> 
+  <!-- Font Awesome --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <!-- Google Fonts --> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"> 
+  <!-- Your existing styles --> 
+  <link rel="stylesheet" href="styles.css"> 
+  <!-- Script for language switching --> 
+  <script src="script.js" defer></script> 
+</head> 
+<body> 
+  <header> 
+    <nav> 
+      <ul> 
+        <li><a href="index.html" data-lang="home">Home</a></li> 
+        <li><a href="about.html" data-lang="about">About</a></li> 
+        <li><a href="projects.html" data-lang="projects">Projects</a></li> 
+        <li><a href="education.html" data-lang="education">Education</a></li> 
+        <li><a href="experience.html" data-lang="experience">Experience</a></li> 
+        <li><a href="contact.html" data-lang="contact">Contact</a></li> 
+      </ul> 
+      <div class="burger-menu"> 
+        <i class="fas fa-bars"></i> 
+        <div class="dropdown-content"> 
+          <button onclick="setLanguage('en')">EN</button> 
+          <button onclick="setLanguage('de')">DE</button> 
+          <button onclick="setLanguage('ua')">UA</button> 
+        </div> 
+      </div> 
+    </nav> 
+  </header> 
+ 
+  <main> 
+    <section id="experience"> 
+      <h2 data-lang="experience_title">Experience</h2> 
 
-  <main>
-    <section id="experience">
-      <h2 data-lang="experience_title">Experience</h2>
-      <div class="job">
-        <h3>Freelance Java Developer</h3>
-        <p><strong>Duration:</strong> January 2019 - Present</p>
-        <p>As a Freelance Java Developer, I have worked on various projects, delivering high-quality backend solutions and gaining hands-on experience in diverse technologies.</p>
-      </div>
+      <div class="job"> 
+        <h3>Independent Researcher</h3> 
+        <p><strong>Company:</strong> Daniil Krizhanovskyi Research</p> 
+        <p><strong>Duration:</strong> August 2024 - Present</p> 
+        <p><strong>Location:</strong> Zurich, Switzerland · Remote</p> 
+        <p>As an Independent Researcher, I specialize in the development and exploration of advanced quantum cryptography techniques. My current focus is on designing quantum encryption algorithms that leverage the principles of quantum mechanics, such as superposition and entanglement, to achieve levels of security unattainable by classical encryption methods. I work on developing modular, scalable architectures that can be adapted and optimized for implementation on near-term quantum hardware. My research is self-directed and self-funded, allowing me to pursue cutting-edge topics in quantum computing and cryptography. I am actively seeking collaboration opportunities to further validate and enhance my research through practical applications and testing on quantum systems.</p> 
+        <p><strong>Skills:</strong> Quantum Computing, Network Security, Systems Programming, Engineering</p> 
+      </div> 
 
-      <div class="job">
-        <h3>Billing.media Ukraine</h3>
-        <p><strong>Position:</strong> Java Developer Intern</p>
-        <p><strong>Duration:</strong> January 2019 - June 2019</p>
-        <p>Worked on developing Java-based applications and participated in the full software development lifecycle.</p>
-      </div>
+      <div class="job"> 
+        <h3>Mid+ Rust Engineer</h3> 
+        <p><strong>Company:</strong> NextGen Technologies</p> 
+        <p><strong>Duration:</strong> July 2022 - October 2023</p> 
+        <p><strong>Location:</strong> Rome, Italy · Remote</p> 
+        <p>Served as a Mid+ Rust Engineer, leading the design and development of key components in distributed systems and cloud-native applications. Worked closely with senior engineers to optimize code and ensure high performance and scalability. Played a critical role in implementing best practices in Rust development, contributing to the overall success of the team’s projects.</p> 
+      </div> 
 
-    </section>
-  </main>
-</body>
+      <div class="job"> 
+        <h3>Rust Backend Developer</h3> 
+        <p><strong>Company:</strong> InnovateTech</p> 
+        <p><strong>Duration:</strong> January 2022 - June 2022</p> 
+        <p><strong>Location:</strong> Milan, Italy · Hybrid</p> 
+        <p>Contributed to the development and maintenance of backend services using Rust in a collaborative team environment. Played a vital role in implementing microservices architecture, focusing on system stability and performance. Assisted in the migration of legacy systems to Rust-based platforms, ensuring a seamless transition.</p> 
+      </div> 
+
+      <div class="job"> 
+        <h3>Rust Developer</h3> 
+        <p><strong>Company:</strong> TechSolutions UA</p> 
+        <p><strong>Duration:</strong> January 2021 - November 2021</p> 
+        <p><strong>Location:</strong> Kyiv, Ukraine · Hybrid</p> 
+        <p>Worked as a Rust Developer focusing on building and optimizing backend systems for clients in various industries. Provided IT consulting services to startups, assisting them with adopting Rust for their critical systems. Improved performance and security in multiple projects, enhancing the efficiency and reliability of applications.</p> 
+      </div> 
+
+      <div class="job"> 
+        <h3>Junior Rust Developer</h3> 
+        <p><strong>Company:</strong> TechSolutions UA</p> 
+        <p><strong>Duration:</strong> October 2019 - December 2020</p> 
+        <p><strong>Location:</strong> Kyiv, Ukraine · Onsite</p> 
+        <p>Started as a Junior Rust Developer, focusing on building and maintaining backend components using Rust. Worked closely with senior developers to implement features, debug code, and optimize performance. Contributed to various projects by writing clean, efficient, and well-documented code. Gained experience in collaborating within a team environment, participating in code reviews, and learning best practices in Rust development.</p> 
+      </div> 
+
+    </section> 
+  </main> 
+</body> 
 </html>

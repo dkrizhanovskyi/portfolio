@@ -1,87 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Daniil Krizhanovskyi</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-  <!-- Your existing styles -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Script for language switching -->
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html" data-lang="home">Home</a></li>
-        <li><a href="about.html" data-lang="about">About</a></li>
-        <li><a href="projects.html" data-lang="projects">Projects</a></li>
-        <li><a href="education.html" data-lang="education">Education</a></li>
-        <li><a href="experience.html" data-lang="experience">Experience</a></li>
-        <li><a href="contact.html" data-lang="contact">Contact</a></li>
-      </ul>
-      <div class="burger-menu">
-        <i class="fas fa-bars"></i>
-        <div class="dropdown-content">
-          <button onclick="setLanguage('en')">EN</button>
-          <button onclick="setLanguage('de')">DE</button>
-          <button onclick="setLanguage('ua')">UA</button>
-        </div>
-      </div>
-    </nav>
-  </header>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Projects - Daniil Krizhanovskyi</title> 
+  <!-- Font Awesome --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+  <!-- Google Fonts --> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"> 
+  <!-- Your existing styles --> 
+  <link rel="stylesheet" href="styles.css"> 
+  <!-- Script for language switching --> 
+  <script src="script.js" defer></script> 
+</head> 
+<body> 
+  <header> 
+    <nav> 
+      <ul> 
+        <li><a href="index.html" data-lang="home">Home</a></li> 
+        <li><a href="about.html" data-lang="about">About</a></li> 
+        <li><a href="projects.html" data-lang="projects">Projects</a></li> 
+        <li><a href="education.html" data-lang="education">Education</a></li> 
+        <li><a href="experience.html" data-lang="experience">Experience</a></li> 
+        <li><a href="contact.html" data-lang="contact">Contact</a></li> 
+      </ul> 
+      <div class="burger-menu"> 
+        <i class="fas fa-bars"></i> 
+        <div class="dropdown-content"> 
+          <button onclick="setLanguage('en')">EN</button> 
+          <button onclick="setLanguage('de')">DE</button> 
+          <button onclick="setLanguage('ua')">UA</button> 
+        </div> 
+      </div> 
+    </nav> 
+  </header> 
+ 
+  <main> 
+    <section id="projects"> 
+      <h2 data-lang="projects">Projects</h2> 
 
-  <main>
-    <section id="projects">
-      <h2 data-lang="projects">Projects</h2>
+      <div class="project"> 
+        <h3 data-lang="quantum_toolkit_title">Quantum Cryptographic Toolkit</h3> 
+        <p><strong data-lang="duration">Duration:</strong> <span data-lang="quantum_toolkit_duration">January 2024 - Present</span></p> 
+        <p><strong data-lang="explanation">Description:</strong> <span data-lang="quantum_toolkit_description">Development of a comprehensive toolkit for quantum cryptography, including quantum key distribution (QKD) protocols and post-quantum cryptographic algorithms. The toolkit is designed for use in secure quantum communication systems.</span></p> 
+        <p><strong data-lang="technologies">Technologies Used:</strong> Rust, Qiskit, Python, Quantum Algorithms</p> 
+        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="quantum_toolkit_responsibilities">Led the design and implementation of quantum cryptographic protocols, developed modular components for secure key exchange, and conducted simulations to validate the security of the system.</span></p> 
+        <a href="https://github.com/dkrizhanovskyi/quantum_cryptographic_toolkit" target="_blank">GitHub Repository</a> 
+      </div> 
 
-      <div class="project">
-        <h3 data-lang="travel_guide_title">Travel Guide Backend System</h3>
-        <p><strong data-lang="duration">Duration:</strong> <span data-lang="travel_guide_duration">June 2022 - Now</span></p>
-        <p><strong data-lang="explanation">Description:</strong> <span data-lang="travel_guide_description">Developed a backend system for a travel guide application, aimed at providing users with detailed information about various travel destinations.</span></p>
-        <p><strong data-lang="technologies">Technologies Used:</strong> Java, Spring Boot, Hibernate, PostgreSQL, Docker, GitHub</p>
-        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="travel_guide_responsibilities">Designed and implemented RESTful APIs, managed PostgreSQL database, deployed the application using Docker, and utilized GitHub for version control.</span></p>
-        <a href="https://github.com/dkrizhanovskyi/travel-guide-backend" target="_blank">GitHub Repository</a>
-      </div>
+      <div class="project"> 
+        <h3 data-lang="rust_microservices_title">Microservices Architecture with Rust</h3> 
+        <p><strong data-lang="duration">Duration:</strong> <span data-lang="rust_microservices_duration">July 2022 - October 2023</span></p> 
+        <p><strong data-lang="explanation">Description:</strong> <span data-lang="rust_microservices_description">Built and optimized a microservices architecture for a distributed system using Rust. Focused on performance, security, and scalability to meet the needs of high-demand applications.</span></p> 
+        <p><strong data-lang="technologies">Technologies Used:</strong> Rust, Docker, Kubernetes, gRPC, PostgreSQL</p> 
+        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="rust_microservices_responsibilities">Architected the system, implemented core services, optimized inter-service communication using gRPC, and managed deployments with Docker and Kubernetes.</span></p> 
+        <a href="https://github.com/dkrizhanovskyi/rust-microservices" target="_blank">GitHub Repository</a> 
+      </div> 
 
-      <div class="project">
-        <h3 data-lang="blockchain_title">Blockchain on Go</h3>
-        <p><strong data-lang="duration">Duration:</strong> <span data-lang="blockchain_duration">May 2024 - June 2024</span></p>
-        <p><strong data-lang="explanation">Description:</strong> <span data-lang="blockchain_description">This project implements blockchain written in Go using the Proof of Stake (PoS) consensus algorithm. It includes basic blockchain functionalities like blocks creation, transaction handling, and automatic block addition.</span></p>
-        <p><strong data-lang="technologies">Technologies Used:</strong> Go, Protobuf, gRPC, Redis</p>
-        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="blockchain_responsibilities">Developed core blockchain features, implemented transaction handling, designed and optimized block validation processes.</span></p>
-      </div>
+      <div class="project"> 
+        <h3 data-lang="blockchain_title">Blockchain on Go</h3> 
+        <p><strong data-lang="duration">Duration:</strong> <span data-lang="blockchain_duration">May 2024 - June 2024</span></p> 
+        <p><strong data-lang="explanation">Description:</strong> <span data-lang="blockchain_description">Implemented a blockchain from scratch in Go, utilizing the Proof of Stake (PoS) consensus algorithm. The project includes functionalities such as block creation, transaction handling, and block validation.</span></p> 
+        <p><strong data-lang="technologies">Technologies Used:</strong> Go, Protobuf, gRPC, Redis</p> 
+        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="blockchain_responsibilities">Developed the core blockchain logic, handled transaction processes, and optimized the block validation mechanism for efficiency.</span></p> 
+      </div> 
 
-      <div class="project">
-        <h3 data-lang="transport_title">Public Transport Usage Analysis</h3>
-        <p><strong data-lang="duration">Duration:</strong> <span data-lang="transport_duration">March 2020 - June 2020</span></p>
-        <p><strong data-lang="explanation">Description:</strong> <span data-lang="transport_description">Analyzed and visualized public transport usage across various regions of Switzerland using data science techniques.</span></p>
-        <p><strong data-lang="technologies">Technologies Used:</strong> Python, Pandas, Matplotlib, Scikit-learn</p>
-        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="transport_responsibilities">Collected and cleaned data from multiple sources, performed statistical analysis, developed models to forecast public transport demand.</span></p>
-        <a href="https://github.com/dkrizhanovskyi/public-transport-usage-analysis" target="_blank">GitHub Repository</a>
-      </div>
+      <div class="project"> 
+        <h3 data-lang="quantum_vqe_title">Quantum VQE Project</h3> 
+        <p><strong data-lang="duration">Duration:</strong> <span data-lang="quantum_vqe_duration">September 2023 - December 2023</span></p> 
+        <p><strong data-lang="explanation">Description:</strong> <span data-lang="quantum_vqe_description">Implemented and optimized the Variational Quantum Eigensolver (VQE) algorithm for quantum chemistry simulations, focusing on energy level calculations for molecular structures.</span></p> 
+        <p><strong data-lang="technologies">Technologies Used:</strong> Python, Qiskit, Quantum Algorithms</p> 
+        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="quantum_vqe_responsibilities">Developed the algorithm, conducted simulations, and analyzed results to refine the approach for better accuracy in quantum chemistry predictions.</span></p> 
+        <a href="https://github.com/dkrizhanovskyi/quantum-vqe-project" target="_blank">GitHub Repository</a> 
+      </div> 
 
-      <div class="project">
-        <h3 data-lang="finance_tracker_title">Personal Finance Tracker</h3>
-        <p><strong data-lang="duration">Duration:</strong> <span data-lang="finance_tracker_duration">August 2020 - December 2020</span></p>
-        <p><strong data-lang="explanation">Description:</strong> <span data-lang="finance_tracker_description">Created a personal finance tracker to help users manage their expenses and income.</span></p>
-        <p><strong data-lang="technologies">Technologies Used:</strong> Java, SQLite, JavaFX</p>
-        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="finance_tracker_responsibilities">Designed the database schema, built a user-friendly interface using JavaFX, implemented features for generating monthly expense reports and visualizing spending patterns.</span></p>
-      </div>
+      <div class="project"> 
+        <h3 data-lang="crypto_comparison_title">Cryptographic Algorithm Comparison</h3> 
+        <p><strong data-lang="duration">Duration:</strong> <span data-lang="crypto_comparison_duration">February 2023 - April 2023</span></p> 
+        <p><strong data-lang="explanation">Description:</strong> <span data-lang="crypto_comparison_description">A comparative analysis of classical and post-quantum cryptographic algorithms, focusing on performance metrics, security evaluations, and computational efficiency.</span></p> 
+        <p><strong data-lang="technologies">Technologies Used:</strong> Python, OpenSSL, PyCrypto</p> 
+        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="crypto_comparison_responsibilities">Conducted benchmark testing, analyzed cryptographic performance, and documented the findings to guide future cryptographic implementations.</span></p> 
+        <a href="https://github.com/dkrizhanovskyi/crypto-comparison" target="_blank">GitHub Repository</a> 
+      </div> 
 
-      <div class="project">
-        <h3 data-lang="library_system_title">Library Management System</h3>
-        <p><strong data-lang="duration">Duration:</strong> <span data-lang="library_system_duration">March 2020 - June 2020</span></p>
-        <p><strong data-lang="explanation">Description:</strong> <span data-lang="library_system_description">Developed a simple library management system to manage book inventory, user registrations, and book borrowing/return processes.</span></p>
-        <p><strong data-lang="technologies">Technologies Used:</strong> Java, MySQL, JDBC, Swing</p>
-        <p><strong data-lang="responsibilities">Responsibilities:</strong> <span data-lang="library_system_responsibilities">Designed and implemented the database schema, built the user interface using Swing, implemented features for book management, user management, and transaction tracking.</span></p>
-      </div>
-
-    </section>
-  </main>
-</body>
+    </section> 
+  </main> 
+</body> 
 </html>
